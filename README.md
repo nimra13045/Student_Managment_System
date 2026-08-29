@@ -1,0 +1,272 @@
+# 🎓 Student Management System
+
+A simple **Student Management System built with Python** to practice Object-Oriented Programming (OOP), exception handling, JSON file handling, and basic CRUD operations.
+
+This project allows users to add, view, search, delete, and save student records using a command-line interface.
+
+---
+
+## 📌 Features
+
+- ➕ Add a new student
+- 👀 View all students
+- 🔍 Search student by ID
+- 🗑️ Delete student by ID
+- 📊 Calculate student grade based on marks
+- 💾 Save student data to a JSON file
+- ⚠️ Validate age and marks using exception handling
+- 🔐 Use private attributes with getters
+- 🧱 Use Object-Oriented Programming concepts
+
+---
+
+## 🛠️ Technologies Used
+
+- **Python 3**
+- **Object-Oriented Programming (OOP)**
+- **JSON**
+- **Exception Handling**
+- **File Handling**
+- **Command Line Interface (CLI)**
+
+No external Python libraries are required.
+
+---
+
+## 📂 Project Structure
+
+```text
+student-management-system/
+│
+├── main.py
+├── student.py
+├── student.json
+└── README.md
+main.py
+
+Contains the main program, menu system, user input, and student management operations.
+
+student.py
+
+Contains the Student class and its methods.
+
+student.json
+
+Stores student information in JSON format.
+
+README.md
+
+Project documentation.
+
+🧑‍💻 Student Class
+
+The project uses a Student class to represent each student.
+
+Each student contains:
+
+Student Name
+Student ID
+Student Age
+Student Marks
+
+The class also provides methods for:
+
+Getting student information
+Calculating grades
+Displaying student details
+Converting student data into a dictionary for JSON storage
+📊 Grading System
+
+The project calculates grades based on the student's marks:
+
+Marks	Grade
+90–100	A
+80–89	B
+70–79	C
+60–69	D
+30–59	E
+0–29	Fail
+🚀 How to Run
+1. Clone the repository
+git clone https://github.com/nimra-13045/student-management-system.git
+2. Open the project
+cd student-management-system
+3. Run the program
+python main.py
+🖥️ Program Menu
+
+When you run the program, you will see:
+
+===============Student Management System===============
+
+1. Add Student
+2. View Student
+3. Search Student
+4. Delete Student
+5. Save Student
+6. Exit
+
+Enter Your Choice:
+➕ Add Student
+
+Select option 1 to add a student.
+
+Example:
+
+ADD STUDENT
+
+Enter your id: 101
+Enter your name: Nimra
+Enter your age: 21
+Enter your marks: 98
+
+The student is stored as a Student object in the program.
+
+👀 View Students
+
+Select option 2 to view all students.
+
+Example:
+
+-----------------------------
+ID : 101
+NAME : Nimra
+AGE : 21
+Marks : 98
+Grade A
+-----------------------------
+🔍 Search Student
+
+Select option 3 and enter the student's ID.
+
+Example:
+
+Search Student
+
+Enter your id: 101
+
+-----------------------------
+ID : 101
+NAME : Nimra
+AGE : 21
+Marks : 98
+Grade A
+-----------------------------
+
+Student Nimra found successfully
+
+If the ID doesn't exist:
+
+ID Not Found
+🗑️ Delete Student
+
+Select option 4 and enter the student's ID.
+
+Example:
+
+Delete Student
+
+Enter your id: 101
+
+Student Nimra deleted successfully
+
+If the student doesn't exist:
+
+ID Not Found
+💾 Save Student Data
+
+Select option 5 to save the current student list.
+
+The program converts each Student object into a dictionary and stores the data in:
+
+student.json
+
+Example:
+
+[
+    {
+        "name": "Nimra",
+        "id": 101,
+        "age": 21,
+        "marks": 98
+    }
+]
+⚠️ Input Validation
+
+The project uses Python exception handling to validate user input.
+
+Age
+
+Age must be a positive number.
+
+Enter your age: -5
+Invalid age! Please enter a positive number.
+Marks
+
+Marks must be between 0 and 100.
+
+Enter your marks: 150
+Marks must be between 0 and 100
+🧠 Python Concepts Practiced
+
+This project was created to practice the following Python concepts:
+
+Object-Oriented Programming
+Classes
+Objects
+Constructors
+Instance methods
+Private attributes
+Getters
+Encapsulation
+Python Fundamentals
+Variables
+Input/output
+Conditional statements
+Loops
+Lists
+Dictionaries
+Functions
+Error Handling
+try
+except
+ValueError
+Input validation
+File Handling
+Reading and writing files
+JSON serialization
+json.dump()
+Data Management
+Create
+Read
+Search
+Delete
+Save
+🔮 Future Improvements
+
+The project is still under development. Some planned improvements are:
+
+ Load students automatically from student.json when the program starts
+ Prevent duplicate student IDs
+ Update student information
+ Search students by name
+ Sort students by marks
+ Display the highest-scoring student
+ Display class average
+ Add a proper menu using functions
+ Improve error handling
+ Add unit tests
+ Create a graphical user interface (GUI)
+ Add a database such as SQLite
+ Add user authentication
+🎯 Learning Purpose
+
+This project was created as a Python practice project while learning programming and Object-Oriented Programming.
+
+The main goal is to understand how different Python concepts can be combined to build a small real-world application.
+
+👩‍💻 Author
+
+Nimra Nazir
+
+Python Learner | Beginner Developer
